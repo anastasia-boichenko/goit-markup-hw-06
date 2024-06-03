@@ -28,7 +28,7 @@
   <body>
     <!-- #region header -->
     <header class="page-header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-nav">
           <a class="logo" href="./index.html"
             >Web<span class="studio">Studio</span></a
@@ -42,6 +42,17 @@
             <li><a class="nav-link" href="">Portfolio</a></li>
             <li><a class="nav-link" href="">Contacts</a></li>
           </ul>
+          <button
+            class="menu-btn"
+            type="button"
+            width="24"
+            height="24"
+            aria-label="menu navigation button"
+          >
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#mobile-menu" />
+            </svg>
+          </button>
         </nav>
         <address>
           <ul class="contacts-list">
@@ -140,10 +151,15 @@
           <ul class="team-list">
             <li class="team-item">
               <img
-                src="./images/team/img-1.jpg"
+                srcset="
+                  ./images/team//img-1@1x.jpg 1x,
+                  ./images/team//img-1@2x.jpg 2x
+                "
+                src="./images/team//img-1@1x.jpg"
                 alt="Photo of our teammate"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-text">
                 <h3 class="team-subtitle">Mark Guerrero</h3>
@@ -207,10 +223,15 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/team/img-2.jpg"
+                srcset="
+                  ./images/team//img-2@1x.jpg 1x,
+                  ./images/team//img-2@2x.jpg 2x
+                "
+                src="./images/team//img-2@1x.jpg"
                 alt="Photo of our teammate"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-text">
                 <h3 class="team-subtitle">Tom Ford</h3>
@@ -273,10 +294,15 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/team/img-3.jpg"
+                srcset="
+                  ./images/team//img-3@1x.jpg 1x,
+                  ./images/team//img-3@2x.jpg 2x
+                "
+                src="./images/team//img-3@1x.jpg"
                 alt="Photo of our teammate"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-text">
                 <h3 class="team-subtitle">Camila Garcia</h3>
@@ -339,10 +365,15 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/team/img-4.jpg"
+                srcset="
+                  ./images/team//img-4@1x.jpg 1x,
+                  ./images/team//img-4@2x.jpg 2x
+                "
+                src="./images/team//img-4@1x.jpg"
                 alt="Photo of our teammate"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-text">
                 <h3 class="team-subtitle">Daniel Wilson</h3>
@@ -417,10 +448,15 @@
             <li class="portf-item">
               <div class="overlay-wrap">
                 <img
-                  src="./images/portfolio/img-1.jpg"
+                  srcset="
+                    ./images/portfolio/banking-app@1x.jpg 1x,
+                    ./images/portfolio/banking-app@2x.jpg 2x
+                  "
+                  src="./images/portfolio/banking-app@1x.jpg"
                   alt="Banking App"
                   width="360"
                   height="300"
+                  loading="lazy"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -436,7 +472,11 @@
             <li class="portf-item">
               <div class="overlay-wrap">
                 <img
-                  src="./images/portfolio/img-2.jpg"
+                  srcset="
+                    ./images/portfolio/cashless-payment@1x.jpg 1x,
+                    ./images/portfolio/cashless-payment@2x.jpg 2x
+                  "
+                  src="./images/portfolio/cashless-payment@1x.jpg"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -455,7 +495,11 @@
             <li class="portf-item">
               <div class="overlay-wrap">
                 <img
-                  src="./images/portfolio/img-3.jpg"
+                  srcset="
+                    ./images/portfolio/meditation@1x.jpg 1x,
+                    ./images/portfolio/meditation@2x.jpg 2x
+                  "
+                  src="./images/portfolio/meditation@1x.jpg"
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -474,7 +518,11 @@
             <li class="portf-item">
               <div class="overlay-wrap">
                 <img
-                  src="./images/portfolio/img-4.jpg"
+                  srcset="
+                    ./images/portfolio/taxi@1x.jpg 1x,
+                    ./images/portfolio/taxi@2x.jpg 2x
+                  "
+                  src="./images/portfolio/taxi@1x.jpg"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -493,7 +541,11 @@
             <li class="portf-item">
               <div class="overlay-wrap">
                 <img
-                  src="./images/portfolio/img-5.jpg"
+                  srcset="
+                    ./images/portfolio/illustration@1x.jpg 1x,
+                    ./images/portfolio/illustration@2x.jpg 2x
+                  "
+                  src="./images/portfolio/illustration@1x.jpg"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -512,7 +564,11 @@
             <li class="portf-item">
               <div class="overlay-wrap">
                 <img
-                  src="./images/portfolio/img-6.jpg"
+                  srcset="
+                    ./images/portfolio/courses@1x.jpg 1x,
+                    ./images/portfolio/courses@2x.jpg 2x
+                  "
+                  src="./images/portfolio/courses@1x.jpg"
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -537,7 +593,7 @@
 
     <!-- #region footer -->
     <footer class="end-page">
-      <div class="footer-container">
+      <div class="container footer-container">
         <div class="footer-logo-text">
           <a href="./index.html" class="logo-footer"
             >Web<span class="logo-accent">Studio</span>
@@ -729,5 +785,94 @@
         <!-- #endregion backdrop -->
       </div>
     </div>
+
+    <!-- #region mobile-menu -->
+
+    <div class="menu-container">
+      <button class="menu-btn-close" aria-label="menu close button">
+        <svg class="menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-button" />
+        </svg>
+      </button>
+      <ul class="main-menu">
+        <li class="menu-item">
+          <a href="" class="menu-link active">Studio</a>
+        </li>
+        <li class="menu-item">
+          <a href="" class="menu-link">Portfolio</a>
+        </li>
+        <li class="menu-item">
+          <a href="" class="menu-link">Contacts</a>
+        </li>
+      </ul>
+      <ul class="menu-contacts">
+        <li class="menu-contact-item">
+          <a href="tel:+110001111111" class="menu-contact-link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="menu-contact-item">
+          <a href="mailto:info@devstudio.com" class="menu-contact-link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="footer-social-list menu-socials">
+        <li class="footer-social-icon">
+          <a
+            class="footer-social-link"
+            href="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link Instagram"
+          >
+            <svg class="footer-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-icon">
+          <a
+            class="footer-social-link"
+            href="https://x.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link Twitter"
+          >
+            <svg class="footer-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-icon">
+          <a
+            class="footer-social-link"
+            href="https://facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link Facebook"
+          >
+            <svg class="footer-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-icon">
+          <a
+            class="footer-social-link"
+            href="https://linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link Linkedin"
+          >
+            <svg class="footer-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- #endregion mobile-menu -->
   </body>
 </html>
