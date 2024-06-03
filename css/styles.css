@@ -68,6 +68,7 @@ button {
 /* #region page-header */
 .header-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -183,8 +184,8 @@ button {
 @media (min-width: 768px) {
   .contacts-list {
     display: flex;
-    gap: 40px;
-    padding: 24px 0;
+    gap: 12px;
+    padding: 16px 0;
     align-self: center;
     flex-direction: column;
   }
@@ -199,6 +200,24 @@ button {
 }
 .adress-links {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) {
+  .adress-links {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+  }
+}
+@media (min-width: 1158px) {
+  .adress-links {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+  }
 }
 .adress-links:hover,
 .adress-links:focus,
@@ -394,6 +413,7 @@ button {
   .sol-list {
     flex-direction: row;
     flex-wrap: wrap;
+    row-gap: 72px;
     gap: 24px;
     justify-content: center;
   }
@@ -684,15 +704,13 @@ button {
 .footer-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
   .footer-container {
     column-gap: 24px;
     padding: 0;
+    margin-left: 108px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
@@ -701,6 +719,7 @@ button {
 @media (min-width: 1158px) {
   .footer-container {
     display: flex;
+    column-gap: 0;
     flex-wrap: nowrap;
     align-items: baseline;
     margin-right: 120px;
@@ -708,7 +727,13 @@ button {
 }
 .end-page {
   background-color: #2e2f42;
-  padding: 100px 0;
+  padding: 96px 0;
+}
+@media (min-width: 1158px) {
+  .end-page {
+    background-color: #2e2f42;
+    padding: 100px 0;
+  }
 }
 .footer-container .logo-footer {
   margin-bottom: 16px;
@@ -1177,7 +1202,7 @@ button {
   color: #404bbf;
 }
 .menu-contacts {
-  margin: 48px;
+  margin: 48px 0;
 }
 .menu-contact-item:not(:last-child) {
   margin-bottom: 24px;
