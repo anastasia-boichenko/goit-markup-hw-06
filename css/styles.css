@@ -36,6 +36,8 @@ a {
 img {
   display: block;
   max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 button {
   border: none;
@@ -67,7 +69,6 @@ button {
 .header-container {
   display: flex;
   justify-content: space-between;
-  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -102,6 +103,7 @@ button {
 .header-nav {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 .header-nav .logo {
   padding: 24px 0;
@@ -129,6 +131,7 @@ button {
   justify-content: center;
   align-items: center;
   border: none;
+  margin-left: auto;
 }
 @media (min-width: 768px) {
   .menu-btn {
@@ -279,7 +282,7 @@ button {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   max-width: 496px;
-  font-size: 56px;
+  font-size: 36px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
@@ -288,6 +291,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
+  max-width: 216px;
 }
 @media (min-width: 768px) {
   .hero-title {
@@ -365,7 +369,7 @@ button {
   }
 }
 .sol-item {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
@@ -464,7 +468,12 @@ button {
 /* #region team */
 .team {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
+}
+@media (min-width: 1158px) {
+  .team {
+    padding: 120px 0;
+  }
 }
 .team-title {
   color: #2e2f42;
@@ -699,7 +708,7 @@ button {
 }
 .end-page {
   background-color: #2e2f42;
-  padding: 100px;
+  padding: 100px 0;
 }
 .footer-container .logo-footer {
   margin-bottom: 16px;
@@ -723,6 +732,7 @@ button {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
@@ -739,6 +749,11 @@ button {
   color: #f4f4fd;
   max-width: 264px;
   margin-bottom: 72px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
 }
 .footer-socials {
   display: flex;
